@@ -1,9 +1,16 @@
+import styled from "styled-components";
 const Home = () => {
   return (
     <>
-      <h1>Home Page</h1>
+      <Wrapper className="test">Home Page</Wrapper>
     </>
   );
 };
+
+const Wrapper = styled.section`
+  background-color: ${({ theme }) => theme.colors.bg};
+  width: 20rem;
+  height: 20rem;
+`;
 
 export default Home;
